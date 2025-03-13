@@ -17,8 +17,15 @@ public class UserModels implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID idUser;
-    private String email;
+
+
+    private String username;
+
+
+
     private String password;
 
 
+    public void setRole(String roleUser) {
+    }
 }
