@@ -27,8 +27,6 @@ public class ProductController {
     @Autowired
     ProductRepository productRepository;
 
-//    FileUploadService fileUploadService;
-
     @Autowired
     S3Service s3Service;
 
