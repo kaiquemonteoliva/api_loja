@@ -73,7 +73,7 @@ public class SecurityConfig {
                         .username(userRepository.getUsername())
                         .password(passwordEncoder().encode(userRepository.getPassword()))
                         .roles("ADMIN")
-                        .build(); // Método correto para construir o usuário
+                        .build();
             } else {
                 throw new UsernameNotFoundException("User not found");
             }
